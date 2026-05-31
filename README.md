@@ -1,9 +1,9 @@
-# 🎾 Análisis Estadístico de la ATP en la Nube (Siglo 21)
+# 🎾 ATP Cloud Data Pipeline & Analytics (SIGLO 21)
 
 Este proyecto consiste en la implementación de un **Pipeline de Datos** para migrar, procesar y visualizar un dataset histórico de tenis de ~75 MB. Los datos fueron alojados en un servidor remoto de **MySQL administrado en la nube (Aiven)**, optimizados mediante consultas SQL y consumidos en un **Dashboard Analítico interactivo** en **Looker Studio**.
 
 ## 🚀 Acceso al Dashboard
-👉 [**Ver Dashboard en Looker Studio**](TU_LINK_DE_LOOKER_STUDIO_AQUÍ)
+👉 [**Ver Dashboard en Looker Studio**](https://datastudio.google.com/u/0/reporting/ebd62cbe-af3f-48c3-86f6-dde139dc72a0/page/uPpzF/edit)
 
 ---
 
@@ -11,13 +11,13 @@ Este proyecto consiste en la implementación de un **Pipeline de Datos** para mi
 Para demostrar la integración real con servicios Cloud, se adjuntan las capturas del estado del servidor y la conexión remota en la carpeta `img/`:
 
 ### 1. Servidor MySQL Activo en Aiven Cloud
-![Estado del Servicio en Aiven](img/captura_aiven_dashboard.png)
+![Estado del Servicio en Aiven](img/Aiven.png)
 
 ### 2. Conexión Remota desde MySQL Workbench
-![Conexión Workbench a Cloud](img/captura_workbench_cloud.png)
+![Conexión Workbench a Cloud](img/MySQL-Workbench.png)
 
 ### 3. Dashboard Final en Looker Studio
-![Dashboard Terminado](img/captura_dashboard_terminado.png)
+![Dashboard Terminado](img/DataStudio.png)
 
 ---
 
@@ -45,7 +45,7 @@ El proyecto descarta el uso de almacenamiento local para la reportería, simulan
 * **Cloud Database:** Aiven (Managed MySQL).
 * **Gestor de BD:** MySQL Server / MySQL Workbench.
 * **Visualización:** Looker Studio.
-* **Estructura:** Scripts SQL de optimización y procesamiento alojados en la carpeta `/sql`.
+* **Estructura:** Scripts SQL de optimización y procesamiento alojados en la carpeta `/SQL`.
 
 ---
 
@@ -56,4 +56,4 @@ Para evitar que Looker Studio realizara consultas pesadas a la tabla cruda de 75
 
 ## 📊 Fuente de Datos (Data Source)
 * El dataset original corresponde al histórico oficial de partidos de la ATP.
-* Por buenas prácticas de almacenamiento, el archivo plano de datos no se incluye en este repositorio. Puede ser obtenido directamente de la fuente abierta en: `[Pega aquí el enlace de la fuente original]`.
+* Por buenas prácticas de almacenamiento, el archivo plano de datos no se incluye en este repositorio. Puede ser obtenido directamente de la fuente abierta en: `[(https://github.com/JeffSackmann/tennis_atp)]`.
